@@ -10,11 +10,14 @@
 <head>
     <title>Home Page</title>
 
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="/js/app.js"></script>
+
         {{--Using Bootstrap file--}}
-    <link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" >
-    <link rel="stylesheet" href="{!! asset('css/bootstrap-theme.min.css') !!}">
-    <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    {{--<link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" >--}}
+    {{--<link rel="stylesheet" href="{!! asset('css/bootstrap-theme.min.css') !!}">--}}
+    {{--<script src="{!! asset('js/bootstrap.min.js') !!}"></script>--}}
+    {{--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>--}}
 </head>
 <body>
 <div class="container">
