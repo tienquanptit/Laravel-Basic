@@ -72,9 +72,11 @@ class TicketsController extends Controller
      */
     public function show($slug)
     {
-//        $ticket = Ticket::whereSlug($slug)->firstOrFail(); hoặc sử dụng cái dưới
+//        $ticket = Ticket::whereSlug($slug)->firstOrFail();
+//        hoặc sử dụng cái dưới
         $ticket = Ticket::where('slug', $slug)->firstOrFail();
-        return view('tickets.show', compact('ticket'));
+        $comments = $ticket->comments()->get();
+        return view('tickets.show', compact('ticket','comments'));
     }
 
     /**

@@ -45,3 +45,5 @@ Route::get('sendemail', function (){
     return "Your email has been sent successfully";
 });
 
+Route::post('/comment','CommentsController@newComment');
+
