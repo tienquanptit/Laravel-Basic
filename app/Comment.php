@@ -11,4 +11,9 @@ class Comment extends Model
 //        thuộc về
         return $this->belongsTo('App\Ticket');
     }
+
+    public function post(){
+        //biến thành
+        return $this->morphTo();
+    }
 }

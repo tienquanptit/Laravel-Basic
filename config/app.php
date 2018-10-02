@@ -162,6 +162,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Spatie\Permission\PermissionServiceProvider::class,
+//        debugbar
+        'Barryvdh\Debugbar\ServiceProvider',
     ],
 
     /*
@@ -213,5 +216,7 @@ return [
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
     ],
 ];
