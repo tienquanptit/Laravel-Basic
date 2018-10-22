@@ -11,4 +11,9 @@ class Category extends Model
     public function posts(){
         return $this->belongsToMany('App\Post')->withTimestamps();
     }
+
+    //childs
+    public function childs(){
+        return $this->hasMany('App\Category','parent_id','id');
+    }
 }

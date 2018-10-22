@@ -88,3 +88,11 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 
 //page blog
 Route::get('/blog','BlogController@index');
 Route::get('/blog/{slug?}','BlogController@show');
+
+//auto complete city google map API
+//Route::get('auto-complete-city', 'AutoCompleteController@index')->name('auto-complete-city');
+
+
+//multiple level category
+Route::get('category-tree-view',['uses'=>'CategoryController@manageCategory']);
+Route::post('add-category',['as'=>'add.category','uses'=>'CategoryController@addCategory']);
